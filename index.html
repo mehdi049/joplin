@@ -23,12 +23,17 @@
   <body>
     <div class="container-fluid">
       <div class="blue-bg" id="top-section">
-        <div class="container d-none d-md-block">
+        <div class="container">
           <div class="row" id="nav-section">
             <div class="col-3">
-              <img src="_assets/images/logo-text.png" alt="" width="180" />
+              <img
+                src="_assets/images/logo-text.png"
+                alt=""
+                id="top-logo"
+                width="180"
+              />
             </div>
-            <div class="col-9 text-right">
+            <div class="col-9 text-right d-none d-md-block">
               <a href="#" class="fw500">Help</a>
 
               <a href="#" class="fw500">Forum</a>
@@ -39,6 +44,55 @@
                 <img src="_assets/images/download-icon.png" alt="" />
                 Download</a
               >
+            </div>
+            <div class="col-9 text-right d-block d-md-none">
+              <span class="pointer"
+                ><img src="_assets/images/profile-icon.png" alt=""
+              /></span>
+              &nbsp;&nbsp;
+              <span class="pointer"
+                ><img
+                  src="_assets/images/mobile-menu-open-icon.png"
+                  id="open-menu-mobile"
+                  alt=""
+              /></span>
+
+              <div id="menu-mobile">
+                <br />
+                <div class="text-right">
+                  <img
+                    src="_assets/images/close-icon.png"
+                    alt=""
+                    class="pointer"
+                    id="close-menu-mobile"
+                  />
+                </div>
+                <br />
+                <div class="text-center">
+                  <img src="_assets/images/logo-text-blue.png" alt="" />
+                  <br />
+                  <br />
+                  <a href="#" class="fw500 mobile-menu-link">Contacts</a>
+                  <a href="#" class="fw500 mobile-menu-link">Forum</a>
+                  <a href="#" class="fw500 mobile-menu-link">Help</a>
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <a class="button-link btn-blue" href="#">
+                  <img src="_assets/images/download-icon.png" alt="" />
+                  Download</a
+                >
+                <br />
+                <p class="light-blue mobile-menu-link-bottom text-center">
+                  Joplin© 2021, All rights reserved
+                  <br />
+                  <a href="#" class="fw500">Terms & Conditions</a>
+                  <br />
+                  <a href="#" class="fw500">Privacy Policy</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -405,7 +459,8 @@
       </footer>
     </div>
 
-    <scrpt src="_assets/js/bootstrap5.0.2.js"></scrpt>
-    <scrpt src="_assets/js/script.js"></scrpt>
+    <script src="_assets/js/bootstrap5.0.2.js"></script>
+    <script src="_assets/js/jquery-3.6.0.min.js"></script>
+    <script src="_assets/js/script.js"></script>
   </body>
 </html>
