@@ -330,7 +330,8 @@ footer .button-link {
 
   #top-section,
   #save-web-section,
-  #your-note-section {
+  #your-note-section,
+  #work-together-section {
     background-image: inherit;
   }
 
@@ -374,5 +375,91 @@ footer .button-link {
 @media (min-width: 1400px) {
   .container {
     max-width: 1250px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 34px;
+    line-height: 37.4px;
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 33.6px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+
+  .button-link {
+    display: block;
+    max-width: 400px;
+    margin: auto;
+    padding: 12px 20px;
+  }
+  .img-fluid {
+    margin: auto;
+  }
+
+  .text-center-sm {
+    text-align: center !important;
+  }
+
+  #top-section,
+  #multimedia-notes-section,
+  #work-together-section,
+  #your-note-section {
+    background-image: inherit;
+  }
+
+  #top-section-img {
+    margin-bottom: -90px;
+    margin-top: 50px;
+  }
+
+  #work-together-section {
+    padding-top: 100px;
+    padding-bottom: 0px;
+  }
+  #multimedia-notes-section {
+    padding-top: 30px;
+  }
+  #save-web-section,
+  #customise-it-section,
+  #your-data-section {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-image: inherit;
+  }
+
+  #your-note-section .button-link {
+    margin-bottom: 0px;
+  }
+
+  #in-the-press-section {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  #top-section {
+    background-image: url("../images/top-bg-mobile.png");
+    background-position: bottom;
+  }
+  #save-web-section {
+    background-image: url("../images/save-web-bg-mobile.png");
+    background-position: bottom;
+  }
+  #your-note-section {
+    background-image: url("../images/your-note-bg-mobile.png");
+    background-position: bottom;
+    padding-bottom: 170px;
   }
 }
