@@ -23,6 +23,10 @@ body {
   font-weight: 700;
 }
 
+.ml-30 {
+  margin-left: 30px;
+}
+
 .pointer {
   cursor: pointer;
 }
@@ -263,7 +267,7 @@ p,
 /* footer section  */
 footer {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 footer a,
@@ -343,8 +347,7 @@ footer .button-link {
 
   #top-section,
   #save-web-section,
-  #your-note-section,
-  #work-together-section {
+  #your-note-section {
     background-image: inherit;
   }
 
@@ -391,6 +394,12 @@ footer .button-link {
   }
 }
 
+@media (max-width: 991px) {
+  #work-together-section {
+    background-image: inherit;
+  }
+}
+
 @media (max-width: 767px) {
   h1 {
     font-size: 34px;
@@ -403,6 +412,10 @@ footer .button-link {
   p {
     font-size: 16px;
     line-height: 25.6px;
+  }
+
+  .ml-mobile-0 {
+    margin-left: 0px;
   }
 
   .button-link {
