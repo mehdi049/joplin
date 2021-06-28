@@ -383,8 +383,7 @@ footer .button-link {
   }
 
   #top-section {
-    background-position: left, right;
-    background-size: 300px, 600px;
+    background-position: left, 0px 300px;
   }
   #your-note-section {
     background-size: 100% 100%;
