@@ -120,15 +120,23 @@ p,
 }
 
 .frame-bg {
+  background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
+  padding-bottom: 15px;
 }
 
 .frame-bg-blue {
   background-image: url("../images/frame-blue.png");
 }
+.frame-bg-blue-lg {
+  background-image: url("../images/frame-blue-lg.png");
+}
 .frame-bg-yellow {
   background-image: url("../images/frame-yellow.png");
+}
+.frame-bg-yellow-lg {
+  background-image: url("../images/frame-yellow-lg.png");
 }
 
 /** menu **/
@@ -160,6 +168,10 @@ p,
   background-repeat: no-repeat, no-repeat;
   background-position: left, 0px 100px;
   background-size: contain;
+}
+
+#top-section .frame-bg {
+  padding-bottom: 5px;
 }
 
 .nav-item .download-btn:hover,
@@ -351,13 +363,6 @@ footer .button-link {
 }
 
 /* responsive */
-@media (min-width: 1800px) {
-  #top-section {
-    background-position: left, 0px 100px;
-    background-size: contain;
-  }
-}
-
 @media (min-width: 1200px) and (max-width: 1799px) {
   #nav-section a {
     margin-left: 80px;
@@ -492,6 +497,10 @@ footer .button-link {
 }
 
 @media (max-width: 991px) {
+  .frame-bg {
+    padding-bottom: 8px;
+  }
+
   #work-together-section {
     background-image: inherit;
   }
