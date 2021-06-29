@@ -238,11 +238,12 @@ p,
 
 /* save-web-section  */
 #save-web-section {
-  padding-top: 180px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-image: url("../images/save-web-bg.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: left bottom;
 }
 
 #save-web-title {
@@ -298,8 +299,8 @@ p,
 
 /* your-note-section  */
 #your-note-section {
-  padding-top: 90px;
-  padding-bottom: 55px;
+  padding-top: 50px;
+  padding-bottom: 0px;
   background-image: url("../images/your-note-bg.png");
   background-position: left;
   background-repeat: no-repeat;
