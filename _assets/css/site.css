@@ -39,6 +39,10 @@
   color: #fff;
 }
 
+.white-bg {
+  background-color: #fff;
+}
+
 .darkblue-bg {
   background-color: #072445;
 }
@@ -63,6 +67,11 @@
 
 .small {
   font-size: 16px !important;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 h1 {
@@ -141,8 +150,11 @@ p,
 
 /** menu **/
 #nav-section {
-  padding-top: 50px;
-  margin-bottom: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
 }
 #nav-section a {
   display: inline-block;
@@ -162,24 +174,26 @@ p,
   text-decoration: none;
 }
 
-#top-section {
-  background-image: url("../images/top-left-bg.png"),
-    url("../images/top-right-bg.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: left, 0px 100px;
-  background-size: contain;
-}
-
-#top-section .frame-bg {
-  padding-bottom: 5px;
-}
-
 .nav-item .download-btn:hover,
 .nav-item .download-btn:focus {
   text-decoration: none;
 }
 
 /* top-section  */
+
+#top-section {
+  background-image: url("../images/top-left-bg.png"),
+    url("../images/top-right-bg.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left, 0px 100px;
+  background-size: contain;
+  padding-top: 150px;
+}
+
+#top-section .frame-bg {
+  padding-bottom: 5px;
+}
+
 #logo-logo {
   width: 180px;
 }
@@ -265,10 +279,13 @@ p,
   background-size: auto;
 }
 
-#in-the-press-section .carousel-item-next,
-#in-the-press-section .carousel-item-prev,
-#in-the-press-section .carousel-item.active {
+#in-the-press-section .carousel-item {
   min-height: 500px;
+}
+
+#in-the-press-section .carousel-caption {
+  left: 0;
+  right: 0;
 }
 
 #in-the-press-section .carousel-indicators [data-bs-target] {
@@ -299,6 +316,10 @@ p,
 }
 
 /* price page */
+#price-section {
+  padding-top: 150px;
+}
+
 .price-container {
   border: 1px solid #4f9cf9;
   box-sizing: border-box;
@@ -528,9 +549,7 @@ footer .button-link {
     padding: 30px 20px;
   }
 
-  #in-the-press-section .carousel-item-next,
-  #in-the-press-section .carousel-item-prev,
-  #in-the-press-section .carousel-item.active {
+  #in-the-press-section .carousel-item {
     min-height: 600px;
   }
 }
@@ -578,8 +597,8 @@ footer .button-link {
   }
 
   #nav-section {
-    padding-top: 30px;
-    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   #top-logo {
@@ -631,6 +650,11 @@ footer .button-link {
     margin-left: 0px !important;
   }
 
+  #top-section,
+  #price-section {
+    padding-top: 120px;
+  }
+
   #top-section-img {
     margin-bottom: -90px;
     margin-top: 50px;
@@ -662,19 +686,22 @@ footer .button-link {
   }
 
   #in-the-press-section .carousel {
-    position: relative;
-    margin-top: -100px;
+    margin-top: -50px;
   }
 
-  #in-the-press-section .carousel-item-next,
-  #in-the-press-section .carousel-item-prev,
-  #in-the-press-section .carousel-item.active {
-    min-height: 530px;
+  #in-the-press-section .carousel-item {
+    min-height: 480px;
   }
 
   footer {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  #in-the-press-section .carousel {
+    margin-top: -20px;
   }
 }
 
@@ -696,10 +723,7 @@ footer .button-link {
     background-image: url("../images/your-note-bg-mobile.png");
     background-position: bottom;
     padding-bottom: 170px;
-  }
-
-  #in-the-press-section .carousel-item {
-    min-height: 600px;
+    background-size: contain;
   }
 
   .price-container p.plan-type {
