@@ -8,6 +8,12 @@ body {
   overflow-x: hidden;
 }
 
+#main-container {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 225px;
+}
+
 .fw400 {
   font-weight: 400;
 }
@@ -401,6 +407,9 @@ p,
 footer {
   padding-top: 50px;
   padding-bottom: 30px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer a,
@@ -588,6 +597,12 @@ footer .button-link {
 }
 
 @media (max-width: 767px) {
+  #main-container {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 415px;
+  }
+
   h1 {
     font-size: 34px;
     line-height: 37.4px;
