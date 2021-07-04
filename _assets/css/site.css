@@ -546,12 +546,6 @@ footer .button-link {
   .price-container p.price {
     margin-top: 0px;
   }
-
-  #top-section-img,
-  #multimedia-notes-section-img,
-  #save-web-img {
-    max-width: initial;
-  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
